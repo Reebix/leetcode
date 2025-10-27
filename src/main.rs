@@ -3,6 +3,7 @@ mod longest_common_prefix;
 mod valid_parentheses;
 mod merge_two_sorted_lists;
 mod remove_duplicates_from_sorted_array;
+mod remove_element;
 
 fn main() {
     println!("{}", roman_to_integer::Solution::roman_to_int("MCMXCIV".to_string()));
