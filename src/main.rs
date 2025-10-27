@@ -8,6 +8,9 @@ mod find_the_index_of_the_first_occurrence_in_a_string;
 mod divide_two_integers;
 mod longest_substring_without_repeating_characters;
 mod count_integers_in_intervals;
+mod reverse_integer;
+mod legth_of_last_word;
+mod license_key_formatting;
 
 fn main() {
     println!("{}", roman_to_integer::Solution::roman_to_int("MCMXCIV".to_string()));
@@ -36,5 +39,10 @@ fn main() {
     let mut count_intervals = count_integers_in_intervals::CountIntervals::new();
     println!("{} == 0", count_intervals.count());
     count_intervals.add(1, 1000000000);
-    println!("{} == 8", count_intervals.count());
+    println!("{} == 1000000000", count_intervals.count());
+
+    println!("{} == 321", reverse_integer::Solution::reverse(123));
+    println!("{} == 0", reverse_integer::Solution::reverse(1534236469));
+
+    println!("{} == 5F3Z-2E9W", license_key_formatting::Solution::license_key_formatting("5F3Z-2e-9-w".to_string(), 4));
 }
