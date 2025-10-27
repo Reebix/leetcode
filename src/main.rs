@@ -4,6 +4,7 @@ mod valid_parentheses;
 mod merge_two_sorted_lists;
 mod remove_duplicates_from_sorted_array;
 mod remove_element;
+mod find_the_index_of_the_first_occurrence_in_a_string;
 
 fn main() {
     println!("{}", roman_to_integer::Solution::roman_to_int("MCMXCIV".to_string()));
