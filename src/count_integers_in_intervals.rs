@@ -1,4 +1,3 @@
-// rust
 use std::cmp::{max, min};
 
 pub struct CountIntervals {
