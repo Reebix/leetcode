@@ -13,6 +13,8 @@ mod legth_of_last_word;
 mod license_key_formatting;
 mod plus_one;
 mod climbing_stairs;
+mod uses_cache;
+mod lru_cache;
 
 fn main() {
     println!("{}", roman_to_integer::Solution::roman_to_int("MCMXCIV".to_string()));
@@ -54,4 +56,15 @@ fn main() {
     println!("{} == 1", climbing_stairs::Solution::climb_stairs(1));
     println!("{} == 2", climbing_stairs::Solution::climb_stairs(2));
     println!("{} == 3", climbing_stairs::Solution::climb_stairs(3));
+
+    let mut lru_cache = lru_cache::LRUCache::new(2);
+    lru_cache.put(1, 1);
+    lru_cache.put(2, 2);
+    println!("{} == 1", lru_cache.get(1));
+    lru_cache.put(3, 3);
+    println!("{} == -1", lru_cache.get(2));
+    lru_cache.put(4, 4);
+    println!("{} == -1", lru_cache.get(1));
+    println!("{} == 3", lru_cache.get(3));
+    println!("{} == 4", lru_cache.get(4));
 }
