@@ -12,6 +12,7 @@ mod reverse_integer;
 mod legth_of_last_word;
 mod license_key_formatting;
 mod plus_one;
+mod climbing_stairs;
 
 fn main() {
     println!("{}", roman_to_integer::Solution::roman_to_int("MCMXCIV".to_string()));
@@ -48,4 +49,9 @@ fn main() {
     println!("{} == 5F3Z-2E9W", license_key_formatting::Solution::license_key_formatting("5F3Z-2e-9-w".to_string(), 4));
 
     println!("{:?} == 1,0,0", plus_one::Solution::plus_one(vec![9, 9]));
+
+
+    println!("{} == 1", climbing_stairs::Solution::climb_stairs(1));
+    println!("{} == 2", climbing_stairs::Solution::climb_stairs(2));
+    println!("{} == 3", climbing_stairs::Solution::climb_stairs(3));
 }
