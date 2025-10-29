@@ -11,6 +11,7 @@ mod count_integers_in_intervals;
 mod reverse_integer;
 mod legth_of_last_word;
 mod license_key_formatting;
+mod plus_one;
 
 fn main() {
     println!("{}", roman_to_integer::Solution::roman_to_int("MCMXCIV".to_string()));
@@ -45,4 +46,6 @@ fn main() {
     println!("{} == 0", reverse_integer::Solution::reverse(1534236469));
 
     println!("{} == 5F3Z-2E9W", license_key_formatting::Solution::license_key_formatting("5F3Z-2e-9-w".to_string(), 4));
+
+    println!("{:?} == 1,0,0", plus_one::Solution::plus_one(vec![9, 9]));
 }
