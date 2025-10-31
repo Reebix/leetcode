@@ -15,6 +15,7 @@ mod plus_one;
 mod climbing_stairs;
 mod uses_cache;
 mod lru_cache;
+mod rotate_array;
 
 fn main() {
     println!("{}", roman_to_integer::Solution::roman_to_int("MCMXCIV".to_string()));
