@@ -17,6 +17,7 @@ mod uses_cache;
 mod lru_cache;
 mod rotate_array;
 mod zigzag_conversion;
+mod rotate_image;
 
 fn main() {
     println!("{}", roman_to_integer::Solution::roman_to_int("MCMXCIV".to_string()));
