@@ -16,6 +16,7 @@ mod climbing_stairs;
 mod uses_cache;
 mod lru_cache;
 mod rotate_array;
+mod zigzag_conversion;
 
 fn main() {
     println!("{}", roman_to_integer::Solution::roman_to_int("MCMXCIV".to_string()));
@@ -68,4 +69,6 @@ fn main() {
     println!("{} == -1", lru_cache.get(1));
     println!("{} == 3", lru_cache.get(3));
     println!("{} == 4", lru_cache.get(4));
+
+    println!("{} == PAHNAPLSIIGYIR", zigzag_conversion::Solution::convert("PAYPALISHIRING".to_string(), 3));
 }
