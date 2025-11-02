@@ -20,6 +20,7 @@ mod zigzag_conversion;
 mod rotate_image;
 mod powx_n;
 mod delete_nodes_from_linked_list_present_in_array;
+mod power_of_four;
 
 fn main() {
     println!("{}", roman_to_integer::Solution::roman_to_int("MCMXCIV".to_string()));
