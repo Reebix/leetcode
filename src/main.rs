@@ -23,6 +23,7 @@ mod delete_nodes_from_linked_list_present_in_array;
 mod power_of_four;
 mod single_number;
 mod largest_number;
+mod power_of_two;
 
 fn main() {
     println!("{}", roman_to_integer::Solution::roman_to_int("MCMXCIV".to_string()));
