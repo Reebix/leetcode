@@ -24,6 +24,7 @@ mod power_of_four;
 mod single_number;
 mod largest_number;
 mod power_of_two;
+mod integer_to_roman;
 
 fn main() {
     println!("{}", roman_to_integer::Solution::roman_to_int("MCMXCIV".to_string()));
@@ -79,5 +80,7 @@ fn main() {
 
     println!("{} == PAHNAPLSIIGYIR", zigzag_conversion::Solution::convert("PAYPALISHIRING".to_string(), 3));
 
-    println!("{}==9534330", largest_number::Solution::largest_number(vec![3, 30, 34, 5, 9]))
+    println!("{}==9534330", largest_number::Solution::largest_number(vec![3, 30, 34, 5, 9]));
+
+    println!("{}==MMMDCCXLIX", integer_to_roman::Solution::int_to_roman(3749));
 }
