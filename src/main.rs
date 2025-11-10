@@ -28,6 +28,7 @@ mod integer_to_roman;
 mod sort_colors;
 mod majority_element;
 mod water_bottles;
+mod water_bottles_ii;
 
 fn main() {
     println!("{}", roman_to_integer::Solution::roman_to_int("MCMXCIV".to_string()));
