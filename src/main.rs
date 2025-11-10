@@ -27,6 +27,7 @@ mod power_of_two;
 mod integer_to_roman;
 mod sort_colors;
 mod majority_element;
+mod water_bottles;
 
 fn main() {
     println!("{}", roman_to_integer::Solution::roman_to_int("MCMXCIV".to_string()));
@@ -87,4 +88,6 @@ fn main() {
     println!("{}==MMMDCCXLIX", integer_to_roman::Solution::int_to_roman(3749));
 
     println!("{}==2", majority_element::Solution::majority_element(vec![2, 2, 1, 1, 1, 2, 2]));
+
+    println!("{}==13", water_bottles::Solution::num_water_bottles(9, 3));
 }
