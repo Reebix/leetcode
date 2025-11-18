@@ -29,6 +29,7 @@ mod sort_colors;
 mod majority_element;
 mod water_bottles;
 mod water_bottles_ii;
+mod find_lucky_integer_in_an_array;
 
 fn main() {
     println!("{}", roman_to_integer::Solution::roman_to_int("MCMXCIV".to_string()));
@@ -91,4 +92,7 @@ fn main() {
     println!("{}==2", majority_element::Solution::majority_element(vec![2, 2, 1, 1, 1, 2, 2]));
 
     println!("{}==13", water_bottles::Solution::num_water_bottles(9, 3));
+
+    println!("{}==2", find_lucky_integer_in_an_array::Solution::find_lucky(vec![2, 2, 3, 4]));
+    println!("{}==3", find_lucky_integer_in_an_array::Solution::find_lucky(vec![1, 2, 2, 3, 3, 3]));
 }
