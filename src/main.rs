@@ -30,6 +30,7 @@ mod majority_element;
 mod water_bottles;
 mod water_bottles_ii;
 mod find_lucky_integer_in_an_array;
+mod check_if_all_1s_are_at_least_length_k_places_away;
 
 fn main() {
     println!("{}", roman_to_integer::Solution::roman_to_int("MCMXCIV".to_string()));
