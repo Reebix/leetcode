@@ -33,6 +33,7 @@ mod find_lucky_integer_in_an_array;
 mod check_if_all_1s_are_at_least_length_k_places_away;
 mod keep_multiplying_found_values_by_two;
 mod container_with_most_water;
+mod reverse_string;
 
 fn main() {
     println!("{}", roman_to_integer::Solution::roman_to_int("MCMXCIV".to_string()));
