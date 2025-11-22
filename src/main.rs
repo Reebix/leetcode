@@ -34,6 +34,7 @@ mod check_if_all_1s_are_at_least_length_k_places_away;
 mod keep_multiplying_found_values_by_two;
 mod container_with_most_water;
 mod reverse_string;
+mod find_minimum_operations_to_make_all_elements_divisible_by_three;
 
 fn main() {
     println!("{}", roman_to_integer::Solution::roman_to_int("MCMXCIV".to_string()));
@@ -99,4 +100,7 @@ fn main() {
 
     println!("{}==2", find_lucky_integer_in_an_array::Solution::find_lucky(vec![2, 2, 3, 4]));
     println!("{}==3", find_lucky_integer_in_an_array::Solution::find_lucky(vec![1, 2, 2, 3, 3, 3]));
+
+    println!("{}==3", find_minimum_operations_to_make_all_elements_divisible_by_three::Solution::minimum_operations(vec![1, 2, 3, 4]));
+    println!("{}==0", find_minimum_operations_to_make_all_elements_divisible_by_three::Solution::minimum_operations(vec![3, 6, 9]));
 }
