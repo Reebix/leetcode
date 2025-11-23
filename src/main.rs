@@ -35,6 +35,7 @@ mod keep_multiplying_found_values_by_two;
 mod container_with_most_water;
 mod reverse_string;
 mod find_minimum_operations_to_make_all_elements_divisible_by_three;
+mod majority_element_ii;
 
 fn main() {
     println!("{}", roman_to_integer::Solution::roman_to_int("MCMXCIV".to_string()));
