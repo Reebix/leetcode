@@ -37,6 +37,7 @@ mod reverse_string;
 mod find_minimum_operations_to_make_all_elements_divisible_by_three;
 mod majority_element_ii;
 mod reverse_words_in_a_string_iii;
+mod reverse_words_in_a_string;
 
 fn main() {
     println!("{}", roman_to_integer::Solution::roman_to_int("MCMXCIV".to_string()));
