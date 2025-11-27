@@ -40,6 +40,7 @@ mod reverse_words_in_a_string_iii;
 mod reverse_words_in_a_string;
 mod binary_prefix_divisible_by_5;
 mod check_if_digits_are_equal_in_string_after_operations_i;
+mod final_value_of_variable_after_performing_operations;
 
 fn main() {
     println!("{}", roman_to_integer::Solution::roman_to_int("MCMXCIV".to_string()));
