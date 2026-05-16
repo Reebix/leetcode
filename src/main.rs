@@ -43,6 +43,7 @@ mod check_if_digits_are_equal_in_string_after_operations_i;
 mod final_value_of_variable_after_performing_operations;
 mod find_minimum_in_rotated_sorted_array_ii;
 mod find_pivot_index;
+mod group_anagrams;
 
 fn main() {
     println!("{}", roman_to_integer::Solution::roman_to_int("MCMXCIV".to_string()));
@@ -115,4 +116,6 @@ fn main() {
     println!("{}==1", find_minimum_in_rotated_sorted_array_ii::Solution::find_min(vec![1, 3, 5]));
 
     println!("{}==3", find_pivot_index::Solution::pivot_index(vec![1, 7, 3, 6, 5, 6]));
+
+    println!("{:?}==[['bat'],['nat','tan'],['ate','eat','tea']]", group_anagrams::Solution::group_anagrams(vec!["eat".parse().unwrap(), "tea".parse().unwrap(), "tan".parse().unwrap(), "ate".parse().unwrap(), "nat".parse().unwrap(), "bat".parse().unwrap()]))
 }
