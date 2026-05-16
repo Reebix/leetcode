@@ -1,9 +1,6 @@
 impl Solution {
     pub fn str_str(haystack: String, needle: String) -> i32 {
-        if let Some(some) = haystack.find(&needle) {
-            return some as i32;
-        }
-        -1
+        haystack.find(&needle).map_or(-1, |i| i as i32)
     }
 }
 
