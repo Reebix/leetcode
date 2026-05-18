@@ -1,68 +1,99 @@
-mod roman_to_integer;
-mod longest_common_prefix;
-mod valid_parentheses;
-mod merge_two_sorted_lists;
-mod remove_duplicates_from_sorted_array;
-mod remove_element;
-mod find_the_index_of_the_first_occurrence_in_a_string;
-mod divide_two_integers;
-mod longest_substring_without_repeating_characters;
+mod binary_prefix_divisible_by_5;
+mod check_if_all_1s_are_at_least_length_k_places_away;
+mod check_if_digits_are_equal_in_string_after_operations_i;
+mod climbing_stairs;
+mod container_with_most_water;
 mod count_integers_in_intervals;
-mod reverse_integer;
+mod delete_nodes_from_linked_list_present_in_array;
+mod divide_two_integers;
+mod final_value_of_variable_after_performing_operations;
+mod find_lucky_integer_in_an_array;
+mod find_minimum_in_rotated_sorted_array_ii;
+mod find_minimum_operations_to_make_all_elements_divisible_by_three;
+mod find_pivot_index;
+mod find_the_index_of_the_first_occurrence_in_a_string;
+mod group_anagrams;
+mod integer_to_roman;
+mod jump_game_iii;
+mod jump_game_iv;
+mod keep_multiplying_found_values_by_two;
+mod largest_number;
 mod legth_of_last_word;
 mod license_key_formatting;
-mod plus_one;
-mod climbing_stairs;
-mod uses_cache;
+mod longest_common_prefix;
+mod longest_substring_without_repeating_characters;
 mod lru_cache;
-mod rotate_array;
-mod zigzag_conversion;
-mod rotate_image;
-mod powx_n;
-mod delete_nodes_from_linked_list_present_in_array;
-mod power_of_four;
-mod single_number;
-mod largest_number;
-mod power_of_two;
-mod integer_to_roman;
-mod sort_colors;
 mod majority_element;
+mod majority_element_ii;
+mod merge_two_sorted_lists;
+mod plus_one;
+mod power_of_four;
+mod power_of_two;
+mod powx_n;
+mod remove_duplicates_from_sorted_array;
+mod remove_element;
+mod reverse_integer;
+mod reverse_string;
+mod reverse_words_in_a_string;
+mod reverse_words_in_a_string_iii;
+mod roman_to_integer;
+mod rotate_array;
+mod rotate_image;
+mod single_number;
+mod sort_colors;
+mod uses_cache;
+mod valid_parentheses;
 mod water_bottles;
 mod water_bottles_ii;
-mod find_lucky_integer_in_an_array;
-mod check_if_all_1s_are_at_least_length_k_places_away;
-mod keep_multiplying_found_values_by_two;
-mod container_with_most_water;
-mod reverse_string;
-mod find_minimum_operations_to_make_all_elements_divisible_by_three;
-mod majority_element_ii;
-mod reverse_words_in_a_string_iii;
-mod reverse_words_in_a_string;
-mod binary_prefix_divisible_by_5;
-mod check_if_digits_are_equal_in_string_after_operations_i;
-mod final_value_of_variable_after_performing_operations;
-mod find_minimum_in_rotated_sorted_array_ii;
-mod find_pivot_index;
-mod group_anagrams;
-mod jump_game_iii;
+mod zigzag_conversion;
 
 fn main() {
-    println!("{}", roman_to_integer::Solution::roman_to_int("MCMXCIV".to_string()));
+    println!(
+        "{}",
+        roman_to_integer::Solution::roman_to_int("MCMXCIV".to_string())
+    );
 
-    println!("{}", longest_common_prefix::Solution::longest_common_prefix(vec!["flower".parse().unwrap(), "flow".parse().unwrap(), "flight".parse().unwrap()]));
-    println!("{}", longest_common_prefix::Solution::longest_common_prefix(vec!["a".parse().unwrap()]));
+    println!(
+        "{}",
+        longest_common_prefix::Solution::longest_common_prefix(vec![
+            "flower".parse().unwrap(),
+            "flow".parse().unwrap(),
+            "flight".parse().unwrap()
+        ])
+    );
+    println!(
+        "{}",
+        longest_common_prefix::Solution::longest_common_prefix(vec!["a".parse().unwrap()])
+    );
 
-    println!("{} == true", valid_parentheses::Solution::is_valid("()".to_string()));
-    println!("{} == true", valid_parentheses::Solution::is_valid("()[]{}".to_string()));
-    println!("{} == true", valid_parentheses::Solution::is_valid("([])".to_string()));
-    println!("{} == false", valid_parentheses::Solution::is_valid("([)]".to_string()));
+    println!(
+        "{} == true",
+        valid_parentheses::Solution::is_valid("()".to_string())
+    );
+    println!(
+        "{} == true",
+        valid_parentheses::Solution::is_valid("()[]{}".to_string())
+    );
+    println!(
+        "{} == true",
+        valid_parentheses::Solution::is_valid("([])".to_string())
+    );
+    println!(
+        "{} == false",
+        valid_parentheses::Solution::is_valid("([)]".to_string())
+    );
 
     // let list1 = Some(Box::new(ListNode { val: 1, next: Some(Box::new(ListNode { val: 2, next: Some(Box::new(ListNode { val: 4, next: None })) })) }));
     // let list2 = Some(Box::new(ListNode { val: 1, next: Some(Box::new(ListNode { val: 3, next: Some(Box::new(ListNode { val: 4, next: None })) })) }));
 
     // println!("{:#?}", merge_two_sorted_lists::Solution::merge_two_lists(list1, list2));
 
-    println!("{} == 5", remove_duplicates_from_sorted_array::Solution::remove_duplicates(&mut vec![0, 0, 1, 1, 1, 2, 2, 3, 3, 4]));
+    println!(
+        "{} == 5",
+        remove_duplicates_from_sorted_array::Solution::remove_duplicates(&mut vec![
+            0, 0, 1, 1, 1, 2, 2, 3, 3, 4
+        ])
+    );
 
     let mut count_intervals = count_integers_in_intervals::CountIntervals::new();
     count_intervals.add(2, 3);
@@ -78,10 +109,12 @@ fn main() {
     println!("{} == 321", reverse_integer::Solution::reverse(123));
     println!("{} == 0", reverse_integer::Solution::reverse(1534236469));
 
-    println!("{} == 5F3Z-2E9W", license_key_formatting::Solution::license_key_formatting("5F3Z-2e-9-w".to_string(), 4));
+    println!(
+        "{} == 5F3Z-2E9W",
+        license_key_formatting::Solution::license_key_formatting("5F3Z-2e-9-w".to_string(), 4)
+    );
 
     println!("{:?} == 1,0,0", plus_one::Solution::plus_one(vec![9, 9]));
-
 
     println!("{} == 1", climbing_stairs::Solution::climb_stairs(1));
     println!("{} == 2", climbing_stairs::Solution::climb_stairs(2));
@@ -98,27 +131,74 @@ fn main() {
     println!("{} == 3", lru_cache.get(3));
     println!("{} == 4", lru_cache.get(4));
 
-    println!("{} == PAHNAPLSIIGYIR", zigzag_conversion::Solution::convert("PAYPALISHIRING".to_string(), 3));
+    println!(
+        "{} == PAHNAPLSIIGYIR",
+        zigzag_conversion::Solution::convert("PAYPALISHIRING".to_string(), 3)
+    );
 
-    println!("{}==9534330", largest_number::Solution::largest_number(vec![3, 30, 34, 5, 9]));
+    println!(
+        "{}==9534330",
+        largest_number::Solution::largest_number(vec![3, 30, 34, 5, 9])
+    );
 
-    println!("{}==MMMDCCXLIX", integer_to_roman::Solution::int_to_roman(3749));
+    println!(
+        "{}==MMMDCCXLIX",
+        integer_to_roman::Solution::int_to_roman(3749)
+    );
 
-    println!("{}==2", majority_element::Solution::majority_element(vec![2, 2, 1, 1, 1, 2, 2]));
+    println!(
+        "{}==2",
+        majority_element::Solution::majority_element(vec![2, 2, 1, 1, 1, 2, 2])
+    );
 
     println!("{}==13", water_bottles::Solution::num_water_bottles(9, 3));
 
-    println!("{}==2", find_lucky_integer_in_an_array::Solution::find_lucky(vec![2, 2, 3, 4]));
-    println!("{}==3", find_lucky_integer_in_an_array::Solution::find_lucky(vec![1, 2, 2, 3, 3, 3]));
+    println!(
+        "{}==2",
+        find_lucky_integer_in_an_array::Solution::find_lucky(vec![2, 2, 3, 4])
+    );
+    println!(
+        "{}==3",
+        find_lucky_integer_in_an_array::Solution::find_lucky(vec![1, 2, 2, 3, 3, 3])
+    );
 
     println!("{}==3", find_minimum_operations_to_make_all_elements_divisible_by_three::Solution::minimum_operations(vec![1, 2, 3, 4]));
     println!("{}==0", find_minimum_operations_to_make_all_elements_divisible_by_three::Solution::minimum_operations(vec![3, 6, 9]));
 
-    println!("{}==1", find_minimum_in_rotated_sorted_array_ii::Solution::find_min(vec![1, 3, 5]));
+    println!(
+        "{}==1",
+        find_minimum_in_rotated_sorted_array_ii::Solution::find_min(vec![1, 3, 5])
+    );
 
-    println!("{}==3", find_pivot_index::Solution::pivot_index(vec![1, 7, 3, 6, 5, 6]));
+    println!(
+        "{}==3",
+        find_pivot_index::Solution::pivot_index(vec![1, 7, 3, 6, 5, 6])
+    );
 
-    println!("{:?}==[['bat'],['nat','tan'],['ate','eat','tea']]", group_anagrams::Solution::group_anagrams(vec!["eat".parse().unwrap(), "tea".parse().unwrap(), "tan".parse().unwrap(), "ate".parse().unwrap(), "nat".parse().unwrap(), "bat".parse().unwrap()]));
+    println!(
+        "{:?}==[['bat'],['nat','tan'],['ate','eat','tea']]",
+        group_anagrams::Solution::group_anagrams(vec![
+            "eat".parse().unwrap(),
+            "tea".parse().unwrap(),
+            "tan".parse().unwrap(),
+            "ate".parse().unwrap(),
+            "nat".parse().unwrap(),
+            "bat".parse().unwrap()
+        ])
+    );
 
-    println!("{:?}==true", jump_game_iii::Solution::can_reach(vec![4,2,3,0,3,1,2],  5));
+    println!(
+        "{:?}==true",
+        jump_game_iii::Solution::can_reach(vec![4, 2, 3, 0, 3, 1, 2], 5)
+    );
+
+    println!(
+        "{:?}==3",
+        jump_game_iv::Solution::min_jumps(vec![100, -23, -23, 404, 100, 23, 23, 23, 3, 404])
+    );
+
+    println!(
+        "{:?}==1",
+        jump_game_iv::Solution::min_jumps(vec![7, 6, 9, 6, 9, 6, 9, 7])
+    );
 }
