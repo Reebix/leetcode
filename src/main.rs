@@ -26,6 +26,7 @@ mod lru_cache;
 mod majority_element;
 mod majority_element_ii;
 mod merge_two_sorted_lists;
+mod minimum_common_value;
 mod plus_one;
 mod power_of_four;
 mod power_of_two;
@@ -201,4 +202,9 @@ fn main() {
         "{:?}==1",
         jump_game_iv::Solution::min_jumps(vec![7, 6, 9, 6, 9, 6, 9, 7])
     );
+
+    println!(
+        "{:?}==2",
+        minimum_common_value::Solution::get_common(vec![1, 2, 3], vec![2, 4])
+    )
 }
