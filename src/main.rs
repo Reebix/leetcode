@@ -12,6 +12,7 @@ mod find_minimum_in_rotated_sorted_array_ii;
 mod find_minimum_operations_to_make_all_elements_divisible_by_three;
 mod find_pivot_index;
 mod find_the_index_of_the_first_occurrence_in_a_string;
+mod find_the_prefix_common_array_of_two_arrays;
 mod group_anagrams;
 mod integer_to_roman;
 mod jump_game_iii;
@@ -206,5 +207,13 @@ fn main() {
     println!(
         "{:?}==2",
         minimum_common_value::Solution::get_common(vec![1, 2, 3], vec![2, 4])
-    )
+    );
+
+    println!(
+        "{:?}==[0,2,3,4]",
+        find_the_prefix_common_array_of_two_arrays::Solution::find_the_prefix_common_array(
+            vec![1, 3, 2, 4],
+            vec![3, 1, 2, 4]
+        )
+    );
 }
