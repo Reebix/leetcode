@@ -34,8 +34,6 @@ impl Solution {
             }
         }
 
-        println!("{:?}", prefixes);
-
         longest_common_prefix as i32
     }
 }
