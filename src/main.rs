@@ -50,6 +50,7 @@ mod valid_parentheses;
 mod water_bottles;
 mod water_bottles_ii;
 mod zigzag_conversion;
+mod check_if_array_is_sorted_and_rotated;
 
 fn main() {
     println!(
@@ -230,5 +231,10 @@ fn main() {
     println!(
         "{:?}==3",
         search_in_rotated_sorted_array::Solution::search(vec![4, 5, 6, 7, 8, 9, 1, 2, 3], 1)
-    )
+    );
+
+    println!(
+        "{:?}==true",
+        check_if_array_is_sorted_and_rotated::Solution::check(vec![3, 4, 5, 1, 2])
+    );
 }
