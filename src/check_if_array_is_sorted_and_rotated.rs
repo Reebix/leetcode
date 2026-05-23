@@ -1,16 +1,32 @@
 impl Solution {
-    pub fn check(nums: Vec<i32>) -> bool {
-        let mut was_nr = nums[0] < nums[nums.len() - 1];
-        for i in 1..nums.len() {
+    pub fn check(mut nums: Vec<i32>) -> bool {
+        if nums.len() < 3 {
+            return true;
+        }
+
+        if nums[0] < nums[nums.len() - 1] {
+            if nums[1] < nums[0] {
+                return false;
+            }
+            nums[0] = 1;
+        } else {
+            if nums[1] < nums[0] {
+                nums[0] = 1;
+            } else {
+                nums[0] = 0;
+            }
+        }
+
+        for i in 2..nums.len() {
             if nums[i] >= nums[i - 1] {
                 continue;
             }
-            if was_nr {
+            if nums[0] == 2 {
                 return false;
             }
-            was_nr = true;
+            nums[0] += 1;
         }
-        true
+        nums[0] != 2
     }
 }
 
