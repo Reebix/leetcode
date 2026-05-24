@@ -51,6 +51,7 @@ mod water_bottles;
 mod water_bottles_ii;
 mod zigzag_conversion;
 mod check_if_array_is_sorted_and_rotated;
+mod jump_game_v;
 
 fn main() {
     println!(
@@ -236,5 +237,22 @@ fn main() {
     println!(
         "{:?}==true",
         check_if_array_is_sorted_and_rotated::Solution::check(vec![3, 4, 5, 1, 2])
+    );
+
+    println!(
+        "{:?}==4",
+        jump_game_v::Solution::max_jumps(vec![6, 4, 14, 6, 8, 13, 9, 7, 10, 6, 12], 2)
+    );
+    println!(
+        "{:?}==7",
+        jump_game_v::Solution::max_jumps(vec![1, 2, 3, 4, 5, 6, 7], 1)
+    );
+    println!(
+        "{:?}==1",
+        jump_game_v::Solution::max_jumps(vec![3, 3, 3, 3], 1)
+    );
+    println!(
+        "{:?}==11",
+        jump_game_v::Solution::max_jumps(vec![10, 86, 10, 1, 41, 35, 42, 83, 14, 89, 48, 26, 44, 19, 92, 47, 63, 42, 58, 92, 11, 4, 38, 11, 50, 48, 33, 61, 54, 81, 7, 16, 95, 25, 54, 24, 70, 76, 60, 96, 25, 67, 71, 20, 10, 36, 26, 22, 9, 31, 32, 56, 21, 96, 98, 55, 84, 67, 60, 49, 22, 88, 39, 97, 95, 99, 11, 16, 6, 99, 28, 15, 67, 41, 80, 35, 27, 27, 80, 72, 42, 71, 82, 81, 13, 53, 86, 60, 2, 97, 86, 96, 25, 36, 71, 17, 95, 81, 45], 16)
     );
 }
