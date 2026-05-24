@@ -52,6 +52,7 @@ mod water_bottles_ii;
 mod zigzag_conversion;
 mod check_if_array_is_sorted_and_rotated;
 mod jump_game_v;
+mod minimum_distance_to_the_target_element;
 
 fn main() {
     println!(

@@ -1,0 +1,15 @@
+use std::cmp::min;
+
+impl Solution {
+    pub fn get_min_distance(nums: Vec<i32>, target: i32, start: i32) -> i32 {
+        let mut dist = i32::MAX;
+        for i in 0..nums.len() {
+            if nums[i] == target {
+                dist = min((i as i32 - start).abs(), dist);
+            }
+        }
+        dist
+    }
+}
+
+pub struct Solution;
