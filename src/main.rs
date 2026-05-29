@@ -54,6 +54,7 @@ mod check_if_array_is_sorted_and_rotated;
 mod jump_game_v;
 mod minimum_distance_to_the_target_element;
 mod count_the_number_of_special_characters_ii;
+mod minimum_element_after_replacement_with_digit_sum;
 
 fn main() {
     println!(
