@@ -1,10 +1,13 @@
 mod binary_prefix_divisible_by_5;
 mod check_if_all_1s_are_at_least_length_k_places_away;
+mod check_if_array_is_sorted_and_rotated;
 mod check_if_digits_are_equal_in_string_after_operations_i;
 mod climbing_stairs;
 mod container_with_most_water;
 mod count_integers_in_intervals;
+mod count_the_number_of_special_characters_ii;
 mod delete_nodes_from_linked_list_present_in_array;
+mod destroying_asteroids;
 mod divide_two_integers;
 mod final_value_of_variable_after_performing_operations;
 mod find_lucky_integer_in_an_array;
@@ -18,6 +21,7 @@ mod group_anagrams;
 mod integer_to_roman;
 mod jump_game_iii;
 mod jump_game_iv;
+mod jump_game_v;
 mod keep_multiplying_found_values_by_two;
 mod largest_number;
 mod legth_of_last_word;
@@ -29,6 +33,8 @@ mod majority_element;
 mod majority_element_ii;
 mod merge_two_sorted_lists;
 mod minimum_common_value;
+mod minimum_distance_to_the_target_element;
+mod minimum_element_after_replacement_with_digit_sum;
 mod plus_one;
 mod power_of_four;
 mod power_of_two;
@@ -50,11 +56,6 @@ mod valid_parentheses;
 mod water_bottles;
 mod water_bottles_ii;
 mod zigzag_conversion;
-mod check_if_array_is_sorted_and_rotated;
-mod jump_game_v;
-mod minimum_distance_to_the_target_element;
-mod count_the_number_of_special_characters_ii;
-mod minimum_element_after_replacement_with_digit_sum;
 
 fn main() {
     println!(
@@ -256,10 +257,21 @@ fn main() {
     );
     println!(
         "{:?}==11",
-        jump_game_v::Solution::max_jumps(vec![10, 86, 10, 1, 41, 35, 42, 83, 14, 89, 48, 26, 44, 19, 92, 47, 63, 42, 58, 92, 11, 4, 38, 11, 50, 48, 33, 61, 54, 81, 7, 16, 95, 25, 54, 24, 70, 76, 60, 96, 25, 67, 71, 20, 10, 36, 26, 22, 9, 31, 32, 56, 21, 96, 98, 55, 84, 67, 60, 49, 22, 88, 39, 97, 95, 99, 11, 16, 6, 99, 28, 15, 67, 41, 80, 35, 27, 27, 80, 72, 42, 71, 82, 81, 13, 53, 86, 60, 2, 97, 86, 96, 25, 36, 71, 17, 95, 81, 45], 16)
+        jump_game_v::Solution::max_jumps(
+            vec![
+                10, 86, 10, 1, 41, 35, 42, 83, 14, 89, 48, 26, 44, 19, 92, 47, 63, 42, 58, 92, 11,
+                4, 38, 11, 50, 48, 33, 61, 54, 81, 7, 16, 95, 25, 54, 24, 70, 76, 60, 96, 25, 67,
+                71, 20, 10, 36, 26, 22, 9, 31, 32, 56, 21, 96, 98, 55, 84, 67, 60, 49, 22, 88, 39,
+                97, 95, 99, 11, 16, 6, 99, 28, 15, 67, 41, 80, 35, 27, 27, 80, 72, 42, 71, 82, 81,
+                13, 53, 86, 60, 2, 97, 86, 96, 25, 36, 71, 17, 95, 81, 45
+            ],
+            16
+        )
     );
     println!(
         "{:?}==0",
-        count_the_number_of_special_characters_ii::Solution::number_of_special_chars("AbBCab".to_string())
+        count_the_number_of_special_characters_ii::Solution::number_of_special_chars(
+            "AbBCab".to_string()
+        )
     );
 }
