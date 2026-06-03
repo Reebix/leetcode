@@ -236,17 +236,9 @@ fn main() {
     );
 
     fn fib(n: u64) -> u64 {
-        if n == 0 || n == 1 {
-            return 0;
-        }
-
-        let mut a = 0;
-        let mut b = 1;
-        for _i in 0..n {
-            (a, b) = (a + b, a)
-        }
-
-        a
+        (0..n.saturating_sub(1))
+            .fold((0, 1), |b1, _x| (b1.0 + b1.1, b1.0))
+            .0
     }
 
     fn fact(n: u64) -> u64 {
