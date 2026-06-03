@@ -7,7 +7,6 @@ mod container_with_most_water;
 mod count_integers_in_intervals;
 mod count_the_number_of_special_characters_ii;
 mod delete_nodes_from_linked_list_present_in_array;
-mod destroying_asteroids;
 mod divide_two_integers;
 mod final_value_of_variable_after_performing_operations;
 mod find_lucky_integer_in_an_array;
@@ -33,8 +32,6 @@ mod majority_element;
 mod majority_element_ii;
 mod merge_two_sorted_lists;
 mod minimum_common_value;
-mod minimum_distance_to_the_target_element;
-mod minimum_element_after_replacement_with_digit_sum;
 mod plus_one;
 mod power_of_four;
 mod power_of_two;
@@ -237,6 +234,31 @@ fn main() {
         "{:?}==3",
         search_in_rotated_sorted_array::Solution::search(vec![4, 5, 6, 7, 8, 9, 1, 2, 3], 1)
     );
+
+    fn fib(n: u64) -> u64 {
+        if n == 0 || n == 1 {
+            return 0;
+        }
+
+        let mut a = 0;
+        let mut b = 1;
+        for _i in 0..n {
+            (a, b) = (a + b, a)
+        }
+
+        a
+    }
+
+    fn fact(n: u64) -> u64 {
+        (1..n + 1).reduce(|a, b| a * b).unwrap_or(1)
+    }
+
+    for i in 0..10 {
+        println!("fib({}) = {}", i, fib(i));
+    }
+    for i in 0..10 {
+        println!("fact({}) = {}", i, fact(i));
+    }
 
     println!(
         "{:?}==true",
